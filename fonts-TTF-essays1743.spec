@@ -3,6 +3,7 @@ Name:		fonts-ttf-essays1743
 Version:	1.0
 Release:	1
 Source0:	http://www.thibault.org/fonts/essays/Essays1743-%{version}-ttf.tar.gz
+# Source0-md5:	535e9043e006e76929dff127bdc7ffb9
 URL:		http://www.thibault.org/fonts/essays/
 License:	LGPL
 Group:		Fonts
