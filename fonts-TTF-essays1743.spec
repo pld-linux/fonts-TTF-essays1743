@@ -8,13 +8,12 @@ URL:		http://www.thibault.org/fonts/essays/
 License:	LGPL
 Group:		Fonts
 BuildArchitectures:	noarch
-Prereq:		chkfontpath
-Prereq:		fontconfig
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_ttffontsdir	%{_fontsdir}/TTF
 
 %description
 This is Essays 1743, a font by John Stracke, based on the typeface
@@ -31,31 +30,19 @@ of other characters, such as oddball punctuation, numerals, etc.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d $RPM_BUILD_ROOT%{_datadir}/fonts/thibault.org/essays/Type1
-cp -f *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/thibault.org/essays/Type1/
-
-{
-    pushd $RPM_BUILD_ROOT%{_datadir}/fonts/thibault.org/essays/Type1
-    mkfontdir .
-    popd
-}
-
-%post
-/usr/sbin/chkfontpath -q -a /usr/share/fonts/thibault.org/essays/Type1
-fc-cache
-
-%postun
-if [ "$1" = "0" ]; then
-	/usr/sbin/chkfontpath -q -r /usr/share/fonts/thibault.org/essays/Type1
-fi
+install -d $RPM_BUILD_ROOT%{_ttffontsdir}
+install *.ttf $RPM_BUILD_ROOT%{_ttffontsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+fontpostinst TTF
+
+%postun
+fontpostinst TTF
+
 %files
 %defattr(644,root,root,755)
 %doc README
-%doc COPYING
-%{_datadir}/fonts/thibault.org/essays/Type1/*.ttf
-%{_datadir}/fonts/thibault.org/essays/Type1/fonts.dir
+%{_ttffontsdir}/*
