@@ -28,7 +28,7 @@ characters, such as oddball punctuation, numerals, etc.
 
 %description -l pl
 Essays 1743 to font zrobiony przez Johna Stracke, oparty na kroju
-pisma u¿ytym w angielskim t³umaczeniu esejów Montaigne'a z 1743 roku.
+pisma u¿ytym w angielskim t³umaczeniu "Esejów" Montaigne'a z 1743 roku.
 Font jest wydany na licencji GNU LGPL. Aktualnie (w wersji 1.0)
 zawiera normalne, pogrubione, pochy³e i pogrubione pochy³e wersje 817
 znaków: ca³o¶ci ASCII, Latin-1 i Latin Extended A; czê¶ci Latin
