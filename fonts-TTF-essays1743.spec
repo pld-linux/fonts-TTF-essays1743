@@ -10,6 +10,7 @@ Source0:	http://www.thibault.org/fonts/essays/Essays1743-%{version}-ttf.tar.gz
 URL:		http://www.thibault.org/fonts/essays/
 Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/TTF
+Obsoletes:	fonts-ttf-essays1743
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
