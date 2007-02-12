@@ -1,5 +1,5 @@
 Summary:	Essays 1743, a font based on an 18th-century typeface
-Summary(pl):	Essays 1743 - font oparty na kroju pisma z 18. wieku
+Summary(pl.UTF-8):   Essays 1743 - font oparty na kroju pisma z 18. wieku
 Name:		fonts-TTF-essays1743
 Version:	1.0
 Release:	1
@@ -26,14 +26,14 @@ Extended A; some of Latin Extended B (basically, the ones that are
 more or less based on Roman letters); and a variety of other
 characters, such as oddball punctuation, numerals, etc.
 
-%description -l pl
+%description -l pl.UTF-8
 Essays 1743 to font zrobiony przez Johna Stracke, oparty na kroju
-pisma u縴tym w angielskim t硊maczeniu "Esej體" Montaigne'a z 1743 roku.
+pisma u偶ytym w angielskim t艂umaczeniu "Esej贸w" Montaigne'a z 1743 roku.
 Font jest wydany na licencji GNU LGPL. Aktualnie (w wersji 1.0)
-zawiera normalne, pogrubione, pochy砮 i pogrubione pochy砮 wersje 817
-znak體: ca硂禼i ASCII, Latin-1 i Latin Extended A; cz甓ci Latin
-Extended B (te mniej lub bardziej oparte na literach 砤ci駍kich); oraz
-r罂nych innych znak體, takich jak znaki przestanowe, cyfry itp.
+zawiera normalne, pogrubione, pochy艂e i pogrubione pochy艂e wersje 817
+znak贸w: ca艂o艣ci ASCII, Latin-1 i Latin Extended A; cz臋艣ci Latin
+Extended B (te mniej lub bardziej oparte na literach 艂aci艅skich); oraz
+r贸偶nych innych znak贸w, takich jak znaki przestanowe, cyfry itp.
 
 %prep
 %setup -q -n Essays1743
