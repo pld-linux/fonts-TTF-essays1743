@@ -1,5 +1,5 @@
 Summary:	Essays 1743, a font based on an 18th-century typeface
-Summary(pl.UTF-8):   Essays 1743 - font oparty na kroju pisma z 18. wieku
+Summary(pl.UTF-8):	Essays 1743 - font oparty na kroju pisma z 18. wieku
 Name:		fonts-TTF-essays1743
 Version:	1.0
 Release:	1
